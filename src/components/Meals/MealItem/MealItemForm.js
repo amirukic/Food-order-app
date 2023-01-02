@@ -1,7 +1,9 @@
+import { useRef } from 'react'
 import Input from "../../UI/Input"
 import classes from "./MealItemForm.module.css"
 
 const MealItemForm = (props) => {
+    const amountInputRef = useRef()
     return <form className={classes.form}>
         <Input label="Amount" input={{
             id: "amount",
